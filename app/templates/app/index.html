@@ -1,0 +1,46 @@
+{% extends 'app/layout.html' %} 
+
+{% load static %}
+
+{% block body %}
+<div class="mt-10">
+  <p class="flex gap-x-4 justify-center items-center color text-white text-xl">
+    Draw a digit below for me to guess
+    <svg
+      height="50px"
+      width="50px"
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 512 512"
+      xml:space="preserve"
+      fill="#000000"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <circle style="fill: #000000" cx="256" cy="256" r="256"></circle>
+        <path
+          style="fill: #000000"
+          d="M498.838,337.22L275.825,114.209L256.521,350.87L256,398.248l95.379,95.379 C420.698,465.777,475.012,408.485,498.838,337.22z"
+        ></path>
+        <polygon
+          style="fill: #ffffff"
+          points="322.434,275.737 275.825,322.348 275.825,114.209 236.175,114.209 236.175,322.348 189.566,275.737 161.528,303.775 256,398.246 350.472,303.775 "
+        ></polygon>
+        <polygon
+          style="fill: #ffffff"
+          points="350.472,303.775 322.434,275.737 275.825,322.348 275.825,114.209 255.426,114.209 255.426,397.672 256,398.246 "
+        ></polygon>
+      </g>
+    </svg>
+  </p>
+  <div id="grid-input" class="grid grid-cols-8 mx-auto mt-8" style="width: 400px;"></div>
+  <div id="result"></div>
+</div>
+{% endblock %}
