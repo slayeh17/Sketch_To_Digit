@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "background-color: rgb(38 38 38); border: 1px solid white; width: 50px; height: 50px;";
     }
     isColoring = false;
+    result.innerHTML = ""
   });
 
   gridInput.addEventListener("mousedown", (e) => {
