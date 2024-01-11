@@ -4,7 +4,7 @@
 
 {% block body %}
 <div class="mt-10">
-  <p class="flex gap-x-4 justify-center items-center color text-white text-xl">
+  <p class="flex gap-x-4 justify-center items-center text-white text-xl">
     Draw a digit below for me to guess
     <svg
       height="50px"
@@ -39,8 +39,12 @@
         ></polygon>
       </g>
     </svg>
-  </p>
-  <div id="grid-input" class="grid grid-cols-8 mx-auto mt-8" style="width: 400px;"></div>
-  <div id="result"></div>
+    <button id="clear" class="border-2 rounded-xl text-white p-2 hover:bg-gray-700">Clear Grid</button>
+    <button id="guess" class="border-2 rounded-xl text-white p-2 hover:bg-gray-700">Guess</button>
+</p>
+  <div id="grid-input" class="grid grid-cols-8 mx-auto mt-8" style="width: 400px; height: 400px;">
+  </div>
+  <div id="result" class="text-white text-xl text-center mt-8"></div>
+  
 </div>
 {% endblock %}
